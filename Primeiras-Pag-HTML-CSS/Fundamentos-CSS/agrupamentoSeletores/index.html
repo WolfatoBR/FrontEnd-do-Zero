@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        h1, P, DIV {
+            color: blue;
+            background: yellowgreen;
+        }
+        .texto, #link-suporte, #botao-voltar, #botao-fechar {
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Agrupamento de Seletores</h1>
+    <p class="texto">Podemos aplicar as mesmas regras CSS para varios seletores diferentes. Para isso, podemos separar os seletores
+        utilizando uma virgula.</p>
+    <div class="texto">Assim, não presisamos ficar copiando os mesmos codigos para todos, nós podemos utilizar apenas um bloco de CSS
+        e reutilizar as mesmas regras.</div>
+
+    <br><br>
+    <a id="link-documento" href="#">Clique aqui para ver a documentação</a>
+    <a id="link-suporte" href="#">Clique para entrar em contato</a>
+    <a id="botao-voltar" href="#">Voltar</a>
+    <button id="botao-fechar" type="reset">Fechar pagina</button>
+</body>
+
+</html>

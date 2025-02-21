@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        Combinadores: qual o tipo de relação entre 2 seletores.
+        Filho ( > ): seleciona apenas o elemento que é filho direto do pai.
+        Descendente (espaço): seleciona todos os descendentes do pai, independente do nível.
+        Irmão adjacente ( + ): seleciona apenas o irmão adjacente.
+        Irmão geral ( ~ ): seleciona todos os irmãos.
+
+        [SELETOR] [COMBINADOR] [SELETOR] {
+            propriedade: valor;
+        }
+        */
+
+        .fundo-verde  p{
+            background: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fundo-verde">
+        <p>Elemento 01</p>
+        <p>Elemento 02</p>
+        <span>
+            <p>Elemento 03</p>
+            <p>Elemento 04</p>
+        </span>
+        <p>Elemento 05</p>
+        <p>Elemento 06</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags HTML5 Estrutural</title>
+    <style>
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+        }
+
+        nav ul li a {
+            padding: 10px 15px;
+            color: blue;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            color: white;
+            background-color: blue;
+            border-radius: 15px 15px 15px 0;
+        }
+
+        blockquote {
+            border-left: 5px solid blue;
+            padding-left: 10px;
+            background-color: chocolate;
+        }
+
+        article time {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Item1</a></li>
+                <li><a href="#">Item2</a></li>
+                <li><a href="#">Item3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <figure>
+                <img src="neymar.jpg" alt="Imagem de Neymar">
+                <figcaption>Imagem de Neymar</figcaption>
+            </figure>
+            <article>
+                <h1>Neymar vai jogar no Vitoria em 2027??</h1>
+                <p>Artigo piblicado em <time pubdate>21/01/2025</time></p>
+                <p>Segundo um jornalista mundialmente famoso, <q cite="http://Dio.me">Ele admira o ECV</q></p>
+                <blockquote cite="http://Dio.me">
+                    <p>Sei não, mas acho que ele vai jogar no Vitoria em 2027</p>
+                    <p>Sera verdade isso? </p>
+                </blockquote>
+            </article>
+        </section>
+        <aside>
+            <h2>Titulo da Barra Lateral</h2>
+            <p>Conteúdo da Barra Lateral</p>
+        </aside>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

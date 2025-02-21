@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row {
+            margin: 5px;
+        }
+
+        label {
+            width: 100px;
+            display: inline-block;
+            text-align: right;
+            padding-right: 5px;
+        }
+        form{
+            width: 50%;
+            margin: 0 auto;
+        }
+        fieldset{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body style="background-color: #ece90a;">
+    <font color="purple">
+        <h1>Formulario de Cadastro</h1>
+    </font>
+    <marquee behavior="scroll" direction="left">
+        <font color="blue" size="2">
+            <h2>Preencha todos os campos!!</h2>
+        </font>
+    </marquee>
+
+    <div>
+        <source><img src="urso.jpg" width="300" height="200" align="left"></source>
+    </div>
+    <div>
+        <source><img src="urso.jpg" width="300" height="200" align="right"></source>
+    </div>
+
+    <form name="signup" action="#" target="_blank" method="get">
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div class="row">
+            <label>Nome:</label> <input type="text" />
+            <label>Email:</label> <input type="text" />
+        </div>
+        <div class="row">
+            <label>Profissão:</label> <input type="text" />
+            <label>Empresa:</label> <input type="text" />
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Informações de Endereço</legend>
+        <div class="row">
+            <label>Endereço:</label> <input type="text" />
+            <label>Numero:</label> <input type="text" style="width: 30px" />
+        </div>
+        <div class="row">
+            <label>Bairro:</label> <input type="text" />
+        </div>
+        <div class="row">
+            <label>Cidade/UF:</label> <input type="text" />
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Informações de Contato</legend>
+        <div class="row">
+            <label>Telefone:</label> <input type="text" />
+            <label>Whatsapp:</label> <input type="text" />
+        </div>
+        <div class="row">
+            <label>GitHub:</label> <input type="text" />
+            <label>Linkedin:</label> <input type="text" />
+        </div>
+    </fieldset>
+    <div class="row">
+        <button type="reset">
+            Limpar
+        </button>
+        <button type="submit">
+            Enviar
+        </button>
+    </div>
+    <div>
+        <source><img src="urso.jpg" width="400" height="150" align="center"></source>
+    </div>
+</body>
+
+</html>

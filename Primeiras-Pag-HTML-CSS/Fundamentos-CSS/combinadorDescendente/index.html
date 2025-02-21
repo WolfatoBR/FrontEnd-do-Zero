@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        Combinadores: qual o tipo de relação entre 2 seletores.
+        Filho ( > ): seleciona apenas o elemento que é filho direto do pai.
+        Descendente (espaço): seleciona todos os descendentes do pai, independente do nível.
+        Irmão adjacente ( + ): seleciona apenas o irmão adjacente.
+        Irmão geral ( ~ ): seleciona todos os irmãos.
+        
+        [SELETOR] [COMBINADOR] [SELETOR] {
+            propriedade: valor;
+        }
+        */
+        .fundo-verde li {
+            background: lightgreen;
+        }
+
+        .fundo-azul li {
+            background: lightblue;
+        }
+
+        li {
+            color: red;
+        }
+
+        .fundo-verde #sublista-01 li {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li class="fundo-verde" id="lista-01">
+            <div>Item1</div>
+            <ul id="sublista-01">
+                <li>SubItem A</li>
+                <li>SubItem B</li>
+            </ul>
+
+        </li>
+        <li class="fundo-verde" id="lista-02">
+            <div>Item2</div>
+            <ul id="sublista-02">
+                <li>SubItem A</li>
+                <li>SubItem B</li>
+            </ul>
+        </li>
+        <li class="fundo-azul" id="lista-3">
+            <div>Item3</div>
+            <ul id="sublista-03">
+                <li>SubItem A</li>
+                <li>SubItem B</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>
