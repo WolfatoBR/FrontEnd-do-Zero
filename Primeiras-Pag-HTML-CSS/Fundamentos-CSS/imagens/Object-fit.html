@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha CSS</title>
+    <style>
+        div {
+            width: 200px;
+            height: 300px;
+            border: 5px solid blue;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #contain {
+            object-fit: contain;
+        }
+
+        #cover {
+            object-fit: cover;
+        }
+
+        #none {
+            object-fit: none;
+        }
+        #scale-down {
+            object-fit: scale-down;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Propiedade <code>object-fit</code></h1>
+
+    <p> object-fit é uma propriedade CSS que especifica como o conteúdo de um elemento substituído deve ser
+        redimensionado para se ajustar ao contêiner que o contém.
+    </p>
+
+    <code>object-fit: fill;</code> (padrão) - O conteúdo é redimensionado para preencher o contêiner. O conteúdo
+    pode ser distorcido para preencher o contêiner.
+    <div>
+        <img src="https://user-images.githubusercontent.com/85805420/184552636-5d20d469-9fc7-4d51-b7a4-ad03fc764892.png"
+            alt="" id="fill">
+    </div>
+    <br><br>
+    <code>object-fit: contain;</code> - O conteúdo é redimensionado para caber no contêiner, preservando sua
+    proporção original.
+    <div>
+        <img src="https://user-images.githubusercontent.com/85805420/184552636-5d20d469-9fc7-4d51-b7a4-ad03fc764892.png"
+            alt="" id="contain">
+    </div>
+    <br><br>
+    <code>object-fit: cover;</code> - O conteúdo é redimensionado para preencher o contêiner, preservando sua
+    proporção original. O conteúdo pode ser cortado para preencher o contêiner.
+    <div>
+        <img src="https://user-images.githubusercontent.com/85805420/184552636-5d20d469-9fc7-4d51-b7a4-ad03fc764892.png"
+            alt="" id="cover">
+    </div>
+    <br><br>
+    <code>object-fit: none;</code> - O conteúdo é redimensionado para caber no contêiner, preservando sua
+    proporção original. O conteúdo não é redimensionado para preencher o contêiner, e pode sobrar espaço em branco.
+    <div>
+        <img src="https://user-images.githubusercontent.com/85805420/184552636-5d20d469-9fc7-4d51-b7a4-ad03fc764892.png"
+            alt="" id="none">
+    </div>
+    <br><br>
+    <code>object-fit: scale-donw;</code> - O conteúdo é redimensionado para caber no contêiner, preservando sua
+    proporção original. O conteúdo não é redimensionado para preencher o contêiner, e pode sobrar espaço em branco.
+    <div>
+        <img src="https://user-images.githubusercontent.com/85805420/184552636-5d20d469-9fc7-4d51-b7a4-ad03fc764892.png"
+            alt="" id="scale-down">
+    </div>
+</body>
+
+</html>
