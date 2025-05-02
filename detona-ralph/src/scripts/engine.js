@@ -11,7 +11,7 @@ const state = {
         gameVelocity: 1000,
         hitPosition: 0,
         result: 0,
-        currentTime: 10,
+        currentTime: 60,
     },
     //Funções que irão ser executadas no jogo
     actions:{
