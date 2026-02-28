@@ -11,7 +11,7 @@ const state = {
         gameVelocity: 1000,
         hitPosition: 0,
         result: 0,
-        currentTime: 60,
+        currentTime: 25,
     },
     //Funções que irão ser executadas no jogo
     actions:{
@@ -25,11 +25,16 @@ function countdown() {
     state.values.currentTime--;
     state.view.timeLeft.textContent = state.values.currentTime;
 
-    if(state.values.currentTime <= 0){
+    if(state.values.currentTime <= 0 && state.values.result <= 19){
         clearInterval(state.actions.countDownTimerId);
         clearInterval(state.actions.timerId);
         alert("Game Over! Sua pontuação final foi " + state.values.result);
         playsound("gameOver");
+    }
+    else if(state.values.currentTime <= 0 && state.values.result >= 20){
+        clearInterval(state.actions.countDownTimerId);
+        clearInterval(state.actions.timerId);
+        alert("Parabens vc ganhou!! Sua pontuação final foi " + state.values.result);
     }
 }
 
